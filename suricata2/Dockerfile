@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 RUN echo "Start install Suricata"
-RUN apt-get update
+RUN apt-get clean cache && apt-get update
 RUN apt-get -y install build-essential libpcre3 libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-0-2 libyaml-dev zlib1g zlib1g-dev libcap-ng-dev libcap-ng0 make libmagic-dev libjansson-dev libjansson4 pkg-config libgeoip1 libgeoip-dev wget build-essential
 ENV VER 3.1
 RUN wget "http://www.openinfosecfoundation.org/download/suricata-$VER.tar.gz" 
@@ -12,4 +12,10 @@ RUN make install
 RUN ldconfig
 RUN mkdir -p /etc/suricata
 COPY conf/suricata.yaml /etc/suricata
+RUN echo "Start install Oinkmaster"
+RUN apt-get install -y oinkmaster
+COPY conf/oinkmaster.conf /etc
+RUN mkdir /etc/suricata/rules
+RUN oinkmaster -C /etc/oinkmaster.conf -o /etc/suricata/rules
+CMD ["/bin/bash"]
 

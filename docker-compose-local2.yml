@@ -2,16 +2,14 @@ version: '2'
 services:
   suricata:
     container_name: suricata
-    build: suricata
+    build: suricata2
     image: soelk/suricata
     hostname: suricata
     volumes:
       - ./log/suricata:/var/log/suricata
     network_mode: "host"
-    command: /bin/bash -c 'service suricata start && python manage.py runserver 0.0.0.0:8000'
-    #command: /bin/bash
-    ports:
-      - "8000:8000"
+    #command: suricata -c /etc/suricata/suricata.yaml -i eth0
+    command: /bin/bash
   elasticsearch:
     container_name: elasticsearch
     build: elasticsearch
@@ -71,4 +69,3 @@ services:
     links:
       - kibana
       - evebox
-      - suricata
