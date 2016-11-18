@@ -71,4 +71,3 @@ services:
     links:
       - kibana
       - evebox
-      - suricata
