@@ -6,12 +6,10 @@ services:
     image: soelk/suricata
     hostname: suricata
     volumes:
-      - ./log/suricata:/var/log/suricata
+      - ./logs/suricata:/var/log/suricata
     network_mode: "host"
-    command: /bin/bash -c 'service suricata start && python manage.py runserver 0.0.0.0:8000'
-    #command: /bin/bash
-    ports:
-      - "8000:8000"
+    # command: suricata -c /etc/suricata/suricata.yaml -i wlp5s0
+    command: suricata -c /etc/suricata/suricata.yaml -i enp2s0
   elasticsearch:
     container_name: elasticsearch
     build: elasticsearch
@@ -21,7 +19,33 @@ services:
       - "9200:9200"
       - "9300:9300"
     command: elasticsearch -Des.network.host=0.0.0.0
-    #command: /bin/bash
+    volumes:
+      - ./logs/elasticsearch:/usr/share/elasticsearch/logs/
+      - ./data/es1:/usr/share/elasticsearch/data/
+  #   #command: /bin/bash
+  # kafka:
+  #   container_name: kafka
+  #   build: kafka
+  #   image: soelk/kafka
+  #   hostname: kafka
+  #   #command: /bin/bash
+  #   command: /bin/bash -c '/etc/init.d/zookeeper start && /data/kafka/bin/kafka-server-start.sh /data/kafka/config/server.properties'
+  #   ports:
+  #     - "2181:2181"
+  #     - "9092:9092"
+  # spark:
+  #   container_name: spark
+  #   build: spark
+  #   image: soelk/spark
+  #   hostname: spark
+  #   command: /bin/bash
+  #   ports:
+  #     - "9999:9999"
+  #   volumes:
+  #     - ./spark/workdir:/workdir
+  #   links:
+  #     - kafka
+  #     - elasticsearch
   kibana:
     container_name: kibana
     build: kibana
@@ -29,8 +53,9 @@ services:
     hostname: kibana
     ports:
       - "5601:5601"
-    #command: kibana
-    command: /bin/bash -c '/KTS/load.sh http://elasticsearch:9200 && kibana'
+    entrypoint: /wait-for-es.sh elasticsearch
+    volumes:
+      - ./logs/kibana:/var/log/kibana/
     links:
       - elasticsearch
   logstash:
@@ -38,14 +63,15 @@ services:
     build: logstash
     image: soelk/logstash
     hostname: logstash
-    command: logstash -f /etc/logstash/conf.d
-    #command: /bin/bash
     volumes:
       - ./logstash/conf:/etc/logstash/conf.d
-      - ./log/suricata:/var/log/suricata
+      - ./logs/suricata:/var/log/suricata
+      - ./logs/logstash:/var/log/logstash/
     ports:
       - "5000:5000"
+    entrypoint: /wait-for-es.sh elasticsearch
     links:
+    #  - kafka
       - elasticsearch
   evebox:
     container_name: evebox
@@ -54,7 +80,6 @@ services:
     hostname: evebox
     ports:
       - "5636:5636"
-    #command: kibana
     command: evebox -e http://elasticsearch:9200
     links:
       - elasticsearch
@@ -64,8 +89,10 @@ services:
     image: soelk/nginx
     hostname: nginx
     #command: /bin/bash
+    entrypoint: /wait-for-es.sh evebox kibana
     volumes:
       - ./nginx/conf:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx/soelk/
     ports:
       - "80:80"
     links:

@@ -49,19 +49,65 @@ vars:
 
 default-rule-path: /etc/suricata/rules
 rule-files:
- - scirius.rules
 # - decoder-events.rules # available in suricata sources under rules dir
 # - stream-events.rules  # available in suricata sources under rules dir
- - http-events.rules    # available in suricata sources under rules dir
- - smtp-events.rules    # available in suricata sources under rules dir
- - dns-events.rules     # available in suricata sources under rules dir
- - tls-events.rules     # available in suricata sources under rules dir
+# - http-events.rules    # available in suricata sources under rules dir
+# - smtp-events.rules    # available in suricata sources under rules dir
+# - dns-events.rules     # available in suricata sources under rules dir
+# - tls-events.rules     # available in suricata sources under rules dir
 # - modbus-events.rules  # available in suricata sources under rules dir
 # - app-layer-events.rules  # available in suricata sources under rules dir
+  - botcc.portgrouped.rules         
+  - emerging-dos.rules             
+  - emerging-netbios.rules    
+  - emerging-tftp.rules
+  - botcc.rules                     
+  - emerging-exploit.rules         
+  - emerging-p2p.rules        
+  - emerging-trojan.rules
+  - ciarmy.rules                    
+  - emerging-ftp.rules             
+  - emerging-policy.rules     
+  - emerging-user_agents.rules
+  - compromised.rules               
+  - emerging-games.rules           
+  - emerging-pop3.rules       
+  - emerging-voip.rules
+  - drop.rules                      
+  - emerging-icmp_info.rules       
+  - emerging-rpc.rules        
+  - emerging-web_client.rules
+  - dshield.rules                   
+  - emerging-icmp.rules            
+  - emerging-scada.rules      
+  - emerging-web_server.rules
+  - emerging-activex.rules          
+  - emerging-imap.rules            
+  - emerging-scan.rules       
+  - emerging-web_specific_apps.rules
+  - emerging-attack_response.rules  
+  - emerging-inappropriate.rules   
+  - emerging-shellcode.rules  
+  - emerging-worm.rules
+  - emerging-chat.rules             
+  - emerging-info.rules            
+  - emerging-smtp.rules       
+  - rbn-malvertisers.rules
+  - emerging-current_events.rules   
+  - emerging-malware.rules         
+  - emerging-snmp.rules       
+  - rbn.rules
+  - emerging-deleted.rules         
+  - emerging-misc.rules            
+  - emerging-sql.rules        
+  - tor.rules
+  - emerging-dns.rules              
+  - emerging-mobile_malware.rules  
+  - emerging-telnet.rules
 
 classification-file: /etc/suricata/rules/classification.config
 reference-config-file: /etc/suricata/rules/reference.config
-# threshold-file: /etc/suricata/threshold.config
+threshold-file: /etc/suricata/threshold.config
 
 
 ##

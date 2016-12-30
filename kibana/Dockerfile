@@ -6,8 +6,9 @@ RUN git clone https://github.com/StamusNetworks/KTS.git
 WORKDIR KTS
 RUN patch -p1 -d /opt/kibana/  < /KTS/patches/kibana-integer.patch
 RUN patch -p1 -d /opt/kibana/  < /KTS/patches/timelion-integer.patch
-COPY entrypoint.sh /tmp
-RUN chmod +x /tmp/entrypoint.sh
-CMD ["/tmp/entrypoint.sh"]
+RUN echo 0 > /frist_boot
+RUN mkdir -p /var/log/kibana/
+COPY wait-for-es.sh /
+RUN chmod 755 /wait-for-es.sh
 
 
