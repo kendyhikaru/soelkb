@@ -1,0 +1,254 @@
+[2017-01-04 10:13:50,343][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:13:50,794][INFO ][node                     ] [Alicia Masters] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:13:50,794][INFO ][node                     ] [Alicia Masters] initializing ...
+[2017-01-04 10:13:51,770][INFO ][plugins                  ] [Alicia Masters] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:13:51,825][INFO ][env                      ] [Alicia Masters] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:13:51,825][INFO ][env                      ] [Alicia Masters] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:13:56,677][INFO ][node                     ] [Alicia Masters] initialized
+[2017-01-04 10:13:56,678][INFO ][node                     ] [Alicia Masters] starting ...
+[2017-01-04 10:13:56,929][INFO ][transport                ] [Alicia Masters] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:13:56,937][INFO ][discovery                ] [Alicia Masters] elasticsearch/7McelIrTSAuqbPiGXZhGkQ
+[2017-01-04 10:14:00,038][INFO ][cluster.service          ] [Alicia Masters] new_master {Alicia Masters}{7McelIrTSAuqbPiGXZhGkQ}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:14:00,099][INFO ][http                     ] [Alicia Masters] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:14:00,100][INFO ][node                     ] [Alicia Masters] started
+[2017-01-04 10:14:00,350][INFO ][gateway                  ] [Alicia Masters] recovered [8] indices into cluster_state
+[2017-01-04 10:14:04,379][INFO ][cluster.routing.allocation] [Alicia Masters] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][2]] ...]).
+[2017-01-04 10:15:55,517][INFO ][node                     ] [Alicia Masters] stopping ...
+[2017-01-04 10:15:55,767][INFO ][node                     ] [Alicia Masters] stopped
+[2017-01-04 10:15:55,767][INFO ][node                     ] [Alicia Masters] closing ...
+[2017-01-04 10:15:55,788][INFO ][node                     ] [Alicia Masters] closed
+[2017-01-04 10:20:08,034][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:20:08,443][INFO ][node                     ] [Moon Knight] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:20:08,443][INFO ][node                     ] [Moon Knight] initializing ...
+[2017-01-04 10:20:09,650][INFO ][plugins                  ] [Moon Knight] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:20:09,717][INFO ][env                      ] [Moon Knight] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:20:09,717][INFO ][env                      ] [Moon Knight] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:20:14,364][INFO ][node                     ] [Moon Knight] initialized
+[2017-01-04 10:20:14,364][INFO ][node                     ] [Moon Knight] starting ...
+[2017-01-04 10:20:14,513][INFO ][transport                ] [Moon Knight] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:20:14,520][INFO ][discovery                ] [Moon Knight] elasticsearch/9ZWcJWPFTTaAmVMq320o7Q
+[2017-01-04 10:20:17,598][INFO ][cluster.service          ] [Moon Knight] new_master {Moon Knight}{9ZWcJWPFTTaAmVMq320o7Q}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:20:17,666][INFO ][http                     ] [Moon Knight] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:20:17,667][INFO ][node                     ] [Moon Knight] started
+[2017-01-04 10:20:17,959][INFO ][gateway                  ] [Moon Knight] recovered [8] indices into cluster_state
+[2017-01-04 10:20:23,281][INFO ][cluster.routing.allocation] [Moon Knight] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][2]] ...]).
+[2017-01-04 10:22:52,364][INFO ][node                     ] [Moon Knight] stopping ...
+[2017-01-04 10:22:52,628][INFO ][node                     ] [Moon Knight] stopped
+[2017-01-04 10:22:52,628][INFO ][node                     ] [Moon Knight] closing ...
+[2017-01-04 10:22:52,636][INFO ][node                     ] [Moon Knight] closed
+[2017-01-04 10:22:56,794][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:22:57,208][INFO ][node                     ] [Domino] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:22:57,209][INFO ][node                     ] [Domino] initializing ...
+[2017-01-04 10:22:58,290][INFO ][plugins                  ] [Domino] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:22:58,353][INFO ][env                      ] [Domino] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:22:58,353][INFO ][env                      ] [Domino] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:23:03,687][INFO ][node                     ] [Domino] initialized
+[2017-01-04 10:23:03,687][INFO ][node                     ] [Domino] starting ...
+[2017-01-04 10:23:03,853][INFO ][transport                ] [Domino] publish_address {172.18.0.3:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:23:03,865][INFO ][discovery                ] [Domino] elasticsearch/ag_B8oYpTTGTrV4jGNK6Hw
+[2017-01-04 10:23:06,954][INFO ][cluster.service          ] [Domino] new_master {Domino}{ag_B8oYpTTGTrV4jGNK6Hw}{172.18.0.3}{172.18.0.3:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:23:07,081][INFO ][http                     ] [Domino] publish_address {172.18.0.3:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:23:07,081][INFO ][node                     ] [Domino] started
+[2017-01-04 10:23:07,352][INFO ][gateway                  ] [Domino] recovered [8] indices into cluster_state
+[2017-01-04 10:23:12,370][INFO ][cluster.routing.allocation] [Domino] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][1], [logstash-flow-2016.12.30][1]] ...]).
+[2017-01-04 10:25:29,741][INFO ][node                     ] [Domino] stopping ...
+[2017-01-04 10:25:29,912][INFO ][node                     ] [Domino] stopped
+[2017-01-04 10:25:29,913][INFO ][node                     ] [Domino] closing ...
+[2017-01-04 10:25:29,919][INFO ][node                     ] [Domino] closed
+[2017-01-04 10:26:45,680][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:26:45,984][INFO ][node                     ] [David Cannon] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:26:45,984][INFO ][node                     ] [David Cannon] initializing ...
+[2017-01-04 10:26:47,267][INFO ][plugins                  ] [David Cannon] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:26:47,317][INFO ][env                      ] [David Cannon] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:26:47,318][INFO ][env                      ] [David Cannon] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:26:52,018][INFO ][node                     ] [David Cannon] initialized
+[2017-01-04 10:26:52,018][INFO ][node                     ] [David Cannon] starting ...
+[2017-01-04 10:26:52,323][INFO ][transport                ] [David Cannon] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:26:52,336][INFO ][discovery                ] [David Cannon] elasticsearch/JfzDawe9QPK5-xrQphmWxQ
+[2017-01-04 10:26:55,454][INFO ][cluster.service          ] [David Cannon] new_master {David Cannon}{JfzDawe9QPK5-xrQphmWxQ}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:26:55,482][INFO ][http                     ] [David Cannon] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:26:55,482][INFO ][node                     ] [David Cannon] started
+[2017-01-04 10:26:55,772][INFO ][gateway                  ] [David Cannon] recovered [8] indices into cluster_state
+[2017-01-04 10:27:00,078][INFO ][cluster.routing.allocation] [David Cannon] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][0]] ...]).
+[2017-01-04 10:27:41,903][INFO ][node                     ] [David Cannon] stopping ...
+[2017-01-04 10:27:42,248][INFO ][node                     ] [David Cannon] stopped
+[2017-01-04 10:27:42,248][INFO ][node                     ] [David Cannon] closing ...
+[2017-01-04 10:27:42,261][INFO ][node                     ] [David Cannon] closed
+[2017-01-04 10:27:58,686][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:27:59,033][INFO ][node                     ] [Rock Python] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:27:59,033][INFO ][node                     ] [Rock Python] initializing ...
+[2017-01-04 10:28:00,160][INFO ][plugins                  ] [Rock Python] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:28:00,207][INFO ][env                      ] [Rock Python] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:28:00,207][INFO ][env                      ] [Rock Python] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:28:04,713][INFO ][node                     ] [Rock Python] initialized
+[2017-01-04 10:28:04,714][INFO ][node                     ] [Rock Python] starting ...
+[2017-01-04 10:28:04,901][INFO ][transport                ] [Rock Python] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:28:04,910][INFO ][discovery                ] [Rock Python] elasticsearch/ZlvLuWjxQ5yLIb_Y-NHd3w
+[2017-01-04 10:28:07,977][INFO ][cluster.service          ] [Rock Python] new_master {Rock Python}{ZlvLuWjxQ5yLIb_Y-NHd3w}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:28:08,030][INFO ][http                     ] [Rock Python] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:28:08,031][INFO ][node                     ] [Rock Python] started
+[2017-01-04 10:28:08,341][INFO ][gateway                  ] [Rock Python] recovered [8] indices into cluster_state
+[2017-01-04 10:28:13,679][INFO ][cluster.routing.allocation] [Rock Python] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][4], [logstash-flow-2016.12.30][1], [logstash-flow-2016.12.30][1], [logstash-flow-2016.12.30][4]] ...]).
+[2017-01-04 10:28:38,978][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] creating index, cause [auto(bulk api)], templates [logstash], shards [5]/[1], mappings [_default_]
+[2017-01-04 10:28:39,285][INFO ][cluster.routing.allocation] [Rock Python] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2017.01.04][4]] ...]).
+[2017-01-04 10:28:39,398][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] create_mapping [ossec-alerts]
+[2017-01-04 10:29:07,333][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] create_mapping [logs]
+[2017-01-04 10:29:22,419][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:29:22,531][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:30:38,582][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:30:38,990][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:33:28,886][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:33:28,913][INFO ][cluster.metadata         ] [Rock Python] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:34:05,843][INFO ][node                     ] [Rock Python] stopping ...
+[2017-01-04 10:34:06,245][INFO ][node                     ] [Rock Python] stopped
+[2017-01-04 10:34:06,245][INFO ][node                     ] [Rock Python] closing ...
+[2017-01-04 10:34:06,251][INFO ][node                     ] [Rock Python] closed
+[2017-01-04 10:40:15,094][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:40:15,585][INFO ][node                     ] [Rose] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:40:15,585][INFO ][node                     ] [Rose] initializing ...
+[2017-01-04 10:40:16,592][INFO ][plugins                  ] [Rose] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:40:16,637][INFO ][env                      ] [Rose] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:40:16,638][INFO ][env                      ] [Rose] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:40:21,814][INFO ][node                     ] [Rose] initialized
+[2017-01-04 10:40:21,820][INFO ][node                     ] [Rose] starting ...
+[2017-01-04 10:40:22,064][INFO ][transport                ] [Rose] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:40:22,072][INFO ][discovery                ] [Rose] elasticsearch/wv6qDVx3RSiuiG39nTm8-g
+[2017-01-04 10:40:25,180][INFO ][cluster.service          ] [Rose] new_master {Rose}{wv6qDVx3RSiuiG39nTm8-g}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:40:25,281][INFO ][http                     ] [Rose] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:40:25,282][INFO ][node                     ] [Rose] started
+[2017-01-04 10:40:25,817][INFO ][gateway                  ] [Rose] recovered [9] indices into cluster_state
+[2017-01-04 10:40:31,683][INFO ][cluster.routing.allocation] [Rose] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][2], [logstash-flow-2016.12.30][0], [logstash-flow-2016.12.30][2], [logstash-flow-2016.12.30][0]] ...]).
+[2017-01-04 10:41:33,658][INFO ][node                     ] [Rose] stopping ...
+[2017-01-04 10:41:34,462][INFO ][node                     ] [Rose] stopped
+[2017-01-04 10:41:34,464][INFO ][node                     ] [Rose] closing ...
+[2017-01-04 10:41:34,475][INFO ][node                     ] [Rose] closed
+[2017-01-04 10:41:52,471][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:41:52,913][INFO ][node                     ] [Numinus] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:41:52,914][INFO ][node                     ] [Numinus] initializing ...
+[2017-01-04 10:41:54,054][INFO ][plugins                  ] [Numinus] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:41:54,107][INFO ][env                      ] [Numinus] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.4gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:41:54,108][INFO ][env                      ] [Numinus] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:41:59,930][INFO ][node                     ] [Numinus] initialized
+[2017-01-04 10:41:59,930][INFO ][node                     ] [Numinus] starting ...
+[2017-01-04 10:42:00,202][INFO ][transport                ] [Numinus] publish_address {172.18.0.4:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:42:00,212][INFO ][discovery                ] [Numinus] elasticsearch/5abfs6-aSzu26NaU3s-TfQ
+[2017-01-04 10:42:03,339][INFO ][cluster.service          ] [Numinus] new_master {Numinus}{5abfs6-aSzu26NaU3s-TfQ}{172.18.0.4}{172.18.0.4:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:42:03,543][INFO ][http                     ] [Numinus] publish_address {172.18.0.4:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:42:03,543][INFO ][node                     ] [Numinus] started
+[2017-01-04 10:42:04,099][INFO ][gateway                  ] [Numinus] recovered [9] indices into cluster_state
+[2017-01-04 10:42:13,638][INFO ][cluster.routing.allocation] [Numinus] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][1]] ...]).
+[2017-01-04 10:42:38,084][INFO ][cluster.metadata         ] [Numinus] [logstash-2017.01.04] update_mapping [ossec-alerts]
+[2017-01-04 10:43:10,592][INFO ][cluster.metadata         ] [Numinus] [ossec-2017.01.04] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-01-04 10:43:10,982][INFO ][cluster.metadata         ] [Numinus] [wazuh-monitoring-2017.01.04] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-01-04 10:43:11,414][INFO ][cluster.routing.allocation] [Numinus] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[wazuh-monitoring-2017.01.04][4], [wazuh-monitoring-2017.01.04][4]] ...]).
+[2017-01-04 10:43:11,456][DEBUG][action.admin.indices.mapping.put] [Numinus] failed to put mappings on indices [[wazuh-monitoring-2017.01.04]], type [agent]
+MapperParsingException[No handler for type [keyword] declared on field [status]]
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseProperties(ObjectMapper.java:307)
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseObjectOrDocumentTypeProperties(ObjectMapper.java:222)
+	at org.elasticsearch.index.mapper.object.RootObjectMapper$TypeParser.parse(RootObjectMapper.java:139)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:118)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:549)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:257)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:480)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:784)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-01-04 10:43:11,468][DEBUG][action.admin.indices.mapping.put] [Numinus] failed to put mappings on indices [[ossec-2017.01.04]], type [ossec]
+MapperParsingException[malformed mapping no root object found]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.extractMapping(DocumentMapperParser.java:208)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:92)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:549)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:257)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:480)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:784)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-01-04 10:48:03,876][INFO ][node                     ] [Numinus] stopping ...
+[2017-01-04 10:48:04,242][INFO ][node                     ] [Numinus] stopped
+[2017-01-04 10:48:04,244][INFO ][node                     ] [Numinus] closing ...
+[2017-01-04 10:48:04,257][INFO ][node                     ] [Numinus] closed
+[2017-01-04 10:51:56,588][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:51:56,932][INFO ][node                     ] [Hera] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:51:56,932][INFO ][node                     ] [Hera] initializing ...
+[2017-01-04 10:51:58,390][INFO ][plugins                  ] [Hera] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:51:58,433][INFO ][env                      ] [Hera] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.2gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:51:58,433][INFO ][env                      ] [Hera] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:52:02,037][INFO ][node                     ] [Hera] initialized
+[2017-01-04 10:52:02,038][INFO ][node                     ] [Hera] starting ...
+[2017-01-04 10:52:02,193][INFO ][transport                ] [Hera] publish_address {172.18.0.3:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:52:02,199][INFO ][discovery                ] [Hera] elasticsearch/KuSLPNGBSFe7BQLUEfY3QA
+[2017-01-04 10:52:05,295][INFO ][cluster.service          ] [Hera] new_master {Hera}{KuSLPNGBSFe7BQLUEfY3QA}{172.18.0.3}{172.18.0.3:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:52:05,401][INFO ][http                     ] [Hera] publish_address {172.18.0.3:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:52:05,402][INFO ][node                     ] [Hera] started
+[2017-01-04 10:52:05,815][INFO ][gateway                  ] [Hera] recovered [11] indices into cluster_state
+[2017-01-04 10:52:11,052][INFO ][cluster.routing.allocation] [Hera] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][4], [logstash-flow-2016.12.30][2], [logstash-flow-2016.12.30][2], [logstash-flow-2016.12.30][4]] ...]).
+[2017-01-04 10:52:27,696][INFO ][node                     ] [Hera] stopping ...
+[2017-01-04 10:52:27,990][INFO ][node                     ] [Hera] stopped
+[2017-01-04 10:52:27,991][INFO ][node                     ] [Hera] closing ...
+[2017-01-04 10:52:28,001][INFO ][node                     ] [Hera] closed
+[2017-01-04 10:53:15,792][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:53:16,064][INFO ][node                     ] [Jennifer Walters] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:53:16,064][INFO ][node                     ] [Jennifer Walters] initializing ...
+[2017-01-04 10:53:17,445][INFO ][plugins                  ] [Jennifer Walters] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:53:17,490][INFO ][env                      ] [Jennifer Walters] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.2gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:53:17,490][INFO ][env                      ] [Jennifer Walters] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:53:24,328][INFO ][node                     ] [Jennifer Walters] initialized
+[2017-01-04 10:53:24,335][INFO ][node                     ] [Jennifer Walters] starting ...
+[2017-01-04 10:53:24,788][INFO ][transport                ] [Jennifer Walters] publish_address {172.18.0.2:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:53:24,799][INFO ][discovery                ] [Jennifer Walters] elasticsearch/6Wq-6Z26Q8epLFJWDSP5YQ
+[2017-01-04 10:53:27,920][INFO ][cluster.service          ] [Jennifer Walters] new_master {Jennifer Walters}{6Wq-6Z26Q8epLFJWDSP5YQ}{172.18.0.2}{172.18.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:53:28,177][INFO ][http                     ] [Jennifer Walters] publish_address {172.18.0.2:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:53:28,178][INFO ][node                     ] [Jennifer Walters] started
+[2017-01-04 10:53:29,024][INFO ][gateway                  ] [Jennifer Walters] recovered [11] indices into cluster_state
+[2017-01-04 10:53:39,804][INFO ][cluster.routing.allocation] [Jennifer Walters] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][4]] ...]).
+[2017-01-04 10:55:32,923][INFO ][node                     ] [Jennifer Walters] stopping ...
+[2017-01-04 10:55:33,124][INFO ][node                     ] [Jennifer Walters] stopped
+[2017-01-04 10:55:33,124][INFO ][node                     ] [Jennifer Walters] closing ...
+[2017-01-04 10:55:33,132][INFO ][node                     ] [Jennifer Walters] closed
+[2017-01-04 10:55:37,472][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 10:55:37,756][INFO ][node                     ] [Krista Marwan] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 10:55:37,757][INFO ][node                     ] [Krista Marwan] initializing ...
+[2017-01-04 10:55:38,820][INFO ][plugins                  ] [Krista Marwan] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 10:55:38,873][INFO ][env                      ] [Krista Marwan] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.2gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 10:55:38,873][INFO ][env                      ] [Krista Marwan] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 10:55:44,499][INFO ][node                     ] [Krista Marwan] initialized
+[2017-01-04 10:55:44,501][INFO ][node                     ] [Krista Marwan] starting ...
+[2017-01-04 10:55:44,786][INFO ][transport                ] [Krista Marwan] publish_address {172.18.0.3:9300}, bound_addresses {[::]:9300}
+[2017-01-04 10:55:44,810][INFO ][discovery                ] [Krista Marwan] elasticsearch/vkHfgheUSRuHqa3bE51bAA
+[2017-01-04 10:55:47,921][INFO ][cluster.service          ] [Krista Marwan] new_master {Krista Marwan}{vkHfgheUSRuHqa3bE51bAA}{172.18.0.3}{172.18.0.3:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 10:55:48,033][INFO ][http                     ] [Krista Marwan] publish_address {172.18.0.3:9200}, bound_addresses {[::]:9200}
+[2017-01-04 10:55:48,035][INFO ][node                     ] [Krista Marwan] started
+[2017-01-04 10:55:48,692][INFO ][gateway                  ] [Krista Marwan] recovered [11] indices into cluster_state
+[2017-01-04 10:55:56,383][INFO ][cluster.routing.allocation] [Krista Marwan] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][2]] ...]).
+[2017-01-04 10:58:24,591][INFO ][node                     ] [Krista Marwan] stopping ...
+[2017-01-04 10:58:25,463][INFO ][node                     ] [Krista Marwan] stopped
+[2017-01-04 10:58:25,463][INFO ][node                     ] [Krista Marwan] closing ...
+[2017-01-04 10:58:25,478][INFO ][node                     ] [Krista Marwan] closed
+[2017-01-04 11:04:20,907][WARN ][bootstrap                ] unable to install syscall filter: seccomp unavailable: your kernel is buggy and you should upgrade
+[2017-01-04 11:04:21,321][INFO ][node                     ] [She-Hulk] version[2.4.3], pid[1], build[d38a34e/2016-12-07T16:28:56Z]
+[2017-01-04 11:04:21,321][INFO ][node                     ] [She-Hulk] initializing ...
+[2017-01-04 11:04:22,372][INFO ][plugins                  ] [She-Hulk] modules [reindex, lang-expression, lang-groovy], plugins [hq], sites [hq]
+[2017-01-04 11:04:22,422][INFO ][env                      ] [She-Hulk] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sda2)]], net usable_space [70.2gb], net total_space [102.3gb], spins? [possibly], types [ext4]
+[2017-01-04 11:04:22,424][INFO ][env                      ] [She-Hulk] heap size [990.7mb], compressed ordinary object pointers [true]
+[2017-01-04 11:04:27,476][INFO ][node                     ] [She-Hulk] initialized
+[2017-01-04 11:04:27,477][INFO ][node                     ] [She-Hulk] starting ...
+[2017-01-04 11:04:27,720][INFO ][transport                ] [She-Hulk] publish_address {172.18.0.4:9300}, bound_addresses {[::]:9300}
+[2017-01-04 11:04:27,734][INFO ][discovery                ] [She-Hulk] elasticsearch/p88Us2X3Sb619FF4V4zVFA
+[2017-01-04 11:04:30,884][INFO ][cluster.service          ] [She-Hulk] new_master {She-Hulk}{p88Us2X3Sb619FF4V4zVFA}{172.18.0.4}{172.18.0.4:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-01-04 11:04:31,057][INFO ][http                     ] [She-Hulk] publish_address {172.18.0.4:9200}, bound_addresses {[::]:9200}
+[2017-01-04 11:04:31,060][INFO ][node                     ] [She-Hulk] started
+[2017-01-04 11:04:31,709][INFO ][gateway                  ] [She-Hulk] recovered [11] indices into cluster_state
+[2017-01-04 11:04:40,217][INFO ][cluster.routing.allocation] [She-Hulk] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-flow-2016.12.30][0]] ...]).
+[2017-01-04 11:17:32,887][INFO ][node                     ] [She-Hulk] stopping ...
+[2017-01-04 11:17:33,239][INFO ][node                     ] [She-Hulk] stopped
+[2017-01-04 11:17:33,240][INFO ][node                     ] [She-Hulk] closing ...
+[2017-01-04 11:17:33,250][INFO ][node                     ] [She-Hulk] closed

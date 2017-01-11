@@ -1,15 +1,15 @@
 version: '2'
 services:
-  suricata:
-    container_name: suricata
-    build: suricata
-    image: soelk/suricata
-    hostname: suricata
-    volumes:
-      - ./logs/suricata:/var/log/suricata
-    network_mode: "host"
-    # command: suricata -c /etc/suricata/suricata.yaml -i wlp5s0
-    command: suricata -c /etc/suricata/suricata.yaml -i enp2s0
+  # suricata:
+  #   container_name: suricata
+  #   build: suricata
+  #   image: soelk/suricata
+  #   hostname: suricata
+  #   volumes:
+  #     - ./logs/suricata:/var/log/suricata
+  #   network_mode: "host"
+  #   # command: suricata -c /etc/suricata/suricata.yaml -i wlp5s0
+  #   command: suricata -c /etc/suricata/suricata.yaml -i enp2s0
   elasticsearch:
     container_name: elasticsearch
     build: elasticsearch
@@ -22,7 +22,30 @@ services:
     volumes:
       - ./logs/elasticsearch:/usr/share/elasticsearch/logs/
       - ./data/es1:/usr/share/elasticsearch/data/
-  #   #command: /bin/bash
+  wazuh:
+    container_name: wazuh
+    build: wazuh
+    image: soelk/wazuh
+    hostname: wazuh
+    ports:
+      - "1514/udp:1514/udp"
+      - "1515:1515"
+      - "514/udp:514/udp"
+      - "55000:55000"
+    volumes:
+      - ./logs/ossec/:/var/ossec/data/logs/alerts/
+  wazuhdb:
+    container_name: wazuhdb
+    build: wazuhdb
+    image: soelk/wazuhdb
+    hostname: wazuhdb
+    ports:
+      - "9201:9200"
+      - "9301:9300"
+    command: elasticsearch -E node.name="node-1" -E cluster.name="wazuh" -E network.host=0.0.0.0
+    volumes:
+      - ./logs/wazuh_db:/usr/share/elasticsearch/logs/
+      - ./data/wazuh_db:/usr/share/elasticsearch/data/
   # kafka:
   #   container_name: kafka
   #   build: kafka
@@ -46,18 +69,30 @@ services:
   #   links:
   #     - kafka
   #     - elasticsearch
-  kibana:
-    container_name: kibana
-    build: kibana
-    image: soelk/kibana
-    hostname: kibana
+  # kibana:
+  #   container_name: kibana
+  #   build: kibana
+  #   image: soelk/kibana
+  #   hostname: kibana
+  #   ports:
+  #     - "5601:5601"
+  #   entrypoint: /wait-for-es.sh elasticsearch
+  #   volumes:
+  #     - ./logs/kibana:/var/log/kibana/
+  #   links:
+  #     - elasticsearch
+  wazuhkibana:
+    container_name: wazuhkibana
+    build: wazuhkibana
+    image: soelk/wazuhkibana
+    hostname: wazuhkibana
     ports:
-      - "5601:5601"
-    entrypoint: /wait-for-es.sh elasticsearch
+      - "5602:5601"
+    entrypoint: /wait-for-it.sh wazuhdb
     volumes:
-      - ./logs/kibana:/var/log/kibana/
+      - ./logs/wazuhkibana:/var/log/kibana/
     links:
-      - elasticsearch
+      - wazuhdb
   logstash:
     container_name: logstash
     build: logstash
@@ -67,34 +102,36 @@ services:
       - ./logstash/conf:/etc/logstash/conf.d
       - ./logs/suricata:/var/log/suricata
       - ./logs/logstash:/var/log/logstash/
+      - ./logs/ossec/:/var/ossec/data/logs/alerts/
     ports:
       - "5000:5000"
     entrypoint: /wait-for-es.sh elasticsearch
     links:
     #  - kafka
       - elasticsearch
-  evebox:
-    container_name: evebox
-    build: evebox
-    image: soelk/evebox
-    hostname: evebox
-    ports:
-      - "5636:5636"
-    command: evebox -e http://elasticsearch:9200
-    links:
-      - elasticsearch
-  nginx:
-    container_name: nginx
-    build: nginx
-    image: soelk/nginx
-    hostname: nginx
-    #command: /bin/bash
-    entrypoint: /wait-for-es.sh evebox kibana
-    volumes:
-      - ./nginx/conf:/etc/nginx/conf.d
-      - ./logs/nginx:/var/log/nginx/soelk/
-    ports:
-      - "80:80"
-    links:
-      - kibana
-      - evebox
+      - wazuhdb
+  # evebox:
+  #   container_name: evebox
+  #   build: evebox
+  #   image: soelk/evebox
+  #   hostname: evebox
+  #   ports:
+  #     - "5636:5636"
+  #   command: evebox -e http://elasticsearch:9200
+  #   links:
+  #     - elasticsearch
+  # nginx:
+  #   container_name: nginx
+  #   build: nginx
+  #   image: soelk/nginx
+  #   hostname: nginx
+  #   #command: /bin/bash
+  #   entrypoint: /wait-for-es.sh evebox kibana
+  #   volumes:
+  #     - ./nginx/conf:/etc/nginx/conf.d
+  #     - ./logs/nginx:/var/log/nginx/soelk/
+  #   ports:
+  #     - "80:80"
+  #   links:
+  #     - kibana
+  #     - evebox
