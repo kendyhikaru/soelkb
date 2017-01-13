@@ -110,28 +110,28 @@ services:
     #  - kafka
       - elasticsearch
       - wazuhdb
-  # evebox:
-  #   container_name: evebox
-  #   build: evebox
-  #   image: soelk/evebox
-  #   hostname: evebox
-  #   ports:
-  #     - "5636:5636"
-  #   command: evebox -e http://elasticsearch:9200
-  #   links:
-  #     - elasticsearch
-  # nginx:
-  #   container_name: nginx
-  #   build: nginx
-  #   image: soelk/nginx
-  #   hostname: nginx
-  #   #command: /bin/bash
-  #   entrypoint: /wait-for-es.sh evebox kibana
-  #   volumes:
-  #     - ./nginx/conf:/etc/nginx/conf.d
-  #     - ./logs/nginx:/var/log/nginx/soelk/
-  #   ports:
-  #     - "80:80"
-  #   links:
-  #     - kibana
-  #     - evebox
+  evebox:
+    container_name: evebox
+    build: evebox
+    image: soelk/evebox
+    hostname: evebox
+    ports:
+      - "5636:5636"
+    command: evebox -e http://elasticsearch:9200
+    links:
+      - elasticsearch
+  nginx:
+    container_name: nginx
+    build: nginx
+    image: soelk/nginx
+    hostname: nginx
+    #command: /bin/bash
+    entrypoint: /wait-for-es.sh evebox kibana
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx/soelk/
+    ports:
+      - "80:80"
+    links:
+      - kibana
+      - evebox
