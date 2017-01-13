@@ -1,15 +1,15 @@
 version: '2'
 services:
-  # suricata:
-  #   container_name: suricata
-  #   build: suricata
-  #   image: soelk/suricata
-  #   hostname: suricata
-  #   volumes:
-  #     - ./logs/suricata:/var/log/suricata
-  #   network_mode: "host"
-  #   # command: suricata -c /etc/suricata/suricata.yaml -i wlp5s0
-  #   command: suricata -c /etc/suricata/suricata.yaml -i enp2s0
+  suricata:
+    container_name: suricata
+    build: suricata
+    image: soelk/suricata
+    hostname: suricata
+    volumes:
+      - ./logs/suricata:/var/log/suricata
+    network_mode: "host"
+    # command: suricata -c /etc/suricata/suricata.yaml -i wlp5s0
+    command: suricata -c /etc/suricata/suricata.yaml -i enp2s0
   elasticsearch:
     container_name: elasticsearch
     build: elasticsearch
@@ -69,18 +69,18 @@ services:
   #   links:
   #     - kafka
   #     - elasticsearch
-  # kibana:
-  #   container_name: kibana
-  #   build: kibana
-  #   image: soelk/kibana
-  #   hostname: kibana
-  #   ports:
-  #     - "5601:5601"
-  #   entrypoint: /wait-for-es.sh elasticsearch
-  #   volumes:
-  #     - ./logs/kibana:/var/log/kibana/
-  #   links:
-  #     - elasticsearch
+  kibana:
+    container_name: kibana
+    build: kibana
+    image: soelk/kibana
+    hostname: kibana
+    ports:
+      - "5601:5601"
+    entrypoint: /wait-for-es.sh elasticsearch
+    volumes:
+      - ./logs/kibana:/var/log/kibana/
+    links:
+      - elasticsearch
   wazuhkibana:
     container_name: wazuhkibana
     build: wazuhkibana
